@@ -20,104 +20,76 @@
     />
   </head>
   <body>
-    <!-- Animasi Loading -->
-    <!-- <div id="loading-screen">
-      <div class="loading-content">
-        <i class="fa-solid fa-laptop-code fa-5x main-icon hidden"></i>
-        <h1 id="loading-text">My Profile</h1>
 
-        <div class="sub-icons">
-          <i class="fa-brands fa-github fa-2x hidden"></i>
-          <i class="fa-solid fa-code fa-2x hidden"></i>
-          <i class="fa-solid fa-user fa-2x hidden"></i>
-        </div>
-
-        <h2 id="designer-text" class="hidden">Designed by ALfa</h2>
-      </div>
-    </div> -->
-
-    <!-- Header / Navbar -->
     <header class="header-list">
       <div class="div-list">
         <ul class="ul-list">
           <li class="active">
             <i class="fa-regular fa-house icon-blue"></i>
-            <a href="#home">Home</a>
+            <a href="#home" data-key="nav_home">Home</a>
           </li>
           <li>
             <i class="fa-regular fa-address-card icon-blue"></i>
-            <a href="#about">About</a>
+            <a href="#about" data-key="nav_about">About</a>
           </li>
           <li>
             <i class="fa-regular fa-folder-open icon-blue"></i>
-            <a href="#project">Projects</a>
+            <a href="#project" data-key="nav_projects">Projects</a>
           </li>
           <li>
             <i class="fa-solid fa-award icon-blue"></i>
-            <a href="#certificates">Certificates</a>
+            <a href="#certificates" data-key="nav_certificates">Certificates</a>
           </li>
           <li>
             <i class="fa-regular fa-envelope icon-blue"></i>
-            <a href="#contact">Contact</a>
+            <a href="#contact" data-key="nav_contact">Contact</a>
+          </li>
+          <li class="nav-item-lang">
+            <div class="lang-toggle">
+              <button id="lang-en" class="lang-btn" onclick="gantiBahasa('en')">EN</button>
+              <button id="lang-id" class="lang-btn" onclick="gantiBahasa('id')">ID</button>
+            </div>
           </li>
         </ul>
       </div>
     </header>
 
-    <!-- Home  -->
     <section class="home" id="home">
-      <p class="home-p"><span class="home-s"></span>Available</p>
+      <p class="home-p"><span class="home-s"></span><span data-key="status_avail">Available</span></p>
       <div class="home-container">
         <div class="home-section">
           <div class="info-home">
-            <h1>Hola, I'm Alfa</h1>
-            <h3>Future Fullstack Developer</h3>
+            <h1 data-key="home_title">Hola, I'm Alfa</h1>
+            <h3 data-key="home_subtitle">Future Fullstack Developer</h3>
             <div class="info-p">
-              <p>
-                I create beautiful, function, and user centerd digital
-                experiences.
+              <p data-key="home_desc1">
+                I create beautiful, functional, and user centered digital experiences.
               </p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <p>Donec vitae mollis elit, et tincidunt dui.</p>
             </div>
             <div class="info-p2">
               <p><i class="fa-solid fa-location-dot"></i>Based in Indonesia</p>
-              <p><i class="fa-solid fa-briefcase"></i>Available</p>
+              <p><i class="fa-solid fa-briefcase"></i><span data-key="status_avail">Available</span></p>
             </div>
             <div class="btnn">
               <button class="btn-home1">
-                <i class="fa-solid fa-arrow-right"></i> Hire Me
+                <i class="fa-solid fa-arrow-right"></i> <span data-key="btn_hire">Hire Me</span>
               </button>
               <button class="btn-home2">
-                <i class="fa-solid fa-download"></i> Download CV
+                <i class="fa-solid fa-download"></i> <span data-key="btn_cv">Download CV</span>
               </button>
             </div>
             <div class="hhr">
               <hr />
             </div>
             <div class="sosial-media">
-              <p class="followw">Follow me:</p>
+              <p class="followw" data-key="follow">Follow me:</p>
               <ul>
-                <li>
-                  <a href="https://github.com/ALFADHANI284/"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://discord.com/users/1123157035391926274"
-                    ><i class="fa-brands fa-discord"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/alfadhani/"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/dann_alfaa/"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
+                <li><a href="https://github.com/ALFADHANI284/"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://discord.com/users/1123157035391926274"><i class="fa-brands fa-discord"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/alfadhani/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/dann_alfaa/"><i class="fa-brands fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
@@ -126,12 +98,10 @@
       </div>
     </section>
 
-    <!-- Fine Home -->
     <section class="about" id="about">
-      <p id="about">ABOUT ME</p>
+      <p id="about" data-key="about_title">ABOUT ME</p>
       <div class="title">
-        <h1>Building Meaningful</h1>
-        <h1>Digital Experiences</h1>
+        <h1 data-key="about_title2">Building Meaningful <br> Digital Experiences</h1>
       </div>
       <div class="hrrr">
         <hr />
@@ -139,39 +109,26 @@
       <div class="about-container">
         <div class="info-about">
           <div class="about-info">
-            <p>
-              I'm a creative front-end developer passionate about building
-              modern and responsive web experiences.
-              <br />My journey began with a love for design and evolved into a
-              deep curiosity for how the web works — combining <br />
-              logic with creativity to bring ideas to life.
+            <p data-key="about_desc1">
+              I'm a creative front-end developer passionate about building modern and responsive web experiences. My journey began with a love for design and evolved into a deep curiosity for how the web works — combining logic with creativity to bring ideas to life.
             </p>
-            <p>
-              When I'm not coding, I enjoy learning new technologies, improving
-              my projects, <br />
-              and exploring better ways to make the web faster and more
-              engaging. <br />I believe in continuous learning, attention to
-              detail, and the power of clean, meaningful design
+            <p data-key="about_desc2">
+              When I'm not coding, I enjoy learning new technologies, improving my projects, and exploring better ways to make the web faster and more engaging. I believe in continuous learning, attention to detail, and the power of clean, meaningful design
             </p>
           </div>
-          <h2>What Drives Me</h2>
+          <h2 data-key="about_title3">What Drives Me</h2>
           <div class="card">
             <div class="c1">
-              <h3><i class="fa-solid fa-code icon-blue"></i>Languages</h3>
+              <h3><i class="fa-solid fa-code icon-blue"></i><span data-key="about_languages">Languages</span></h3>
               <p>HTML, CSS, JavaScript, C#, Kotlin, Python</p>
             </div>
             <div class="c1">
-              <h3>
-                <i class="fa-solid fa-graduation-cap icon-blue"></i>Education
-              </h3>
-              <p>
-                Vocational High School Telkom Purwokerto in the field of
-                Software Engineering
-              </p>
+              <h3><i class="fa-solid fa-graduation-cap icon-blue"></i>Education</h3>
+              <p data-key="about_education">Vocational High School Telkom Purwokerto in the field of Software Engineering</p>
             </div>
             <div class="c1">
               <h3><i class="fa-solid fa-folder-open icon-blue"></i>Projects</h3>
-              <p>Built more than 5 projects</p>
+              <p data-key="about_projects">Built more than 5 projects</p>
             </div>
           </div>
         </div>
@@ -179,252 +136,183 @@
       </div>
     </section>
 
-    <!-- Project -->
     <section class="project" id="project">
-      <p>PROJECTS</p>
-      <h1>Featured Work</h1>
+      <p data-key="project_title">PROJECTS</p>
+      <h1 data-key="project_title2">Featured Work</h1>
       <hr />
       <div class="info-pro">
-        <p>
-          A showcase of my recent projects demonstrating expertise in full-stack
+        <p data-key="project_p">
+          A showcase of my recent projects demonstrating expertise in full-stack development, modern frameworks, and creative problem-solving.
         </p>
-        <p>development, modern frameworks, and creative problem-solving.</p>
       </div>
       <div class="projects-container">
-<div class="project-card">
-  <img src="assets/images/arts.png" alt="E-Commerce Website" />
-  <h3>E-Commerce Website (ARTS)</h3>
-  <p>A modern online store featuring product filtering, a shopping cart, and a seamless payment system.</p>
-  <div class="skills">
-    <a href="#">HTML</a>
-    <a href="#">CSS</a>
-    <a href="#">JavaScript</a>
-  </div>
-  <div class="btns">
-    <a href="https://github.com/ALFADHANI284/ARTS" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="https://alfadhani284.github.io/ARTS/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <img src="images/Capture d'écran 2025-10-22 182207.png" alt="Portfolio Website" />
-  <h3>Portfolio Website</h3>
-  <p>A personal portfolio built to showcase my web development, design, and coding projects.</p>
-  <div class="skills">
-    <a href="#">HTML</a>
-    <a href="#">CSS</a>
-    <a href="#">Bootstrap</a>
-  </div>
-  <div class="btns">
-    <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
-    <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <img src="assets/images/eatscape.png" alt="Eatscape" />
-  <h3>Eatscape</h3>
-  <p>A responsive web application that provides detailed nutritional information for various foods and drinks.</p>
-  <div class="skills">
-    <a href="#">HTML</a>
-    <a href="#">CSS</a>
-    <a href="#">API</a>
-  </div>
-  <div class="btns">
-    <a href="https://github.com/RGB-Tim/eatscape" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="https://rgb-tim.github.io/eatscape/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <img src="assets/images/page_station.png" alt="Library Website"/>
-  <h3>Library Website (Page Station)</h3>
-  <p>A digital library platform designed for users to comfortably read and access ebooks.</p>
-  <div class="skills">
-    <a href="#">HTML</a>
-    <a href="#">CSS</a>
-    <a href="#">JavaScript</a>
-    <a href="#">PHP</a>
-  </div>
-  <div class="btns">
-    <a href="https://github.com/ALFADHANI284/Page-Station" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <img src="assets/images/raketin.png" alt="Raketin" />
-  <h3>Booking Website (Raketin)</h3>
-  <p>A dedicated landing page and booking system designed for easily reserving badminton courts.</p>
-  <div class="skills">
-    <a href="#">HTML</a>
-    <a href="#">CSS</a>
-    <a href="#">JavaScript</a>
-  </div>
-  <div class="btns">
-    <a href="https://github.com/ALFADHANI284/xipplg6_kelompok5_raketin" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="https://alfadhani284.github.io/xipplg6_kelompok5_raketin/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <img src="assets/images/fundi_vest.png" alt="FundiVest" />
-  <h3>Education Finance Website (FundiVest)</h3>
-  <p>An interactive, pixel-art themed educational platform focused on financial literacy and investment simulation.</p>
-  <div class="skills">
-    <a href="#">Vue JS</a>
-    <a href="#">Tailwind CSS</a>
-    <a href="#">Go Fiber</a>
-  </div>
-  <div class="btns">
-    <a href="https://github.com/ALFADHANI284/FrontEnd" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="https://www.fundivest.xyz/" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <img src="" alt="Jalurku">
-  <h3>Choice of Major (Jalurku)</h3>
-  <p>A guidance web app built to assist students in discovering, exploring, and selecting their ideal university majors.</p>
-  <div class="skills">
-    <a href="#">Vue JS</a>
-    <a href="#">Tailwind CSS</a>
-    <a href="#">Go Fiber</a>
-  </div>
-  <div class="btns">
-    <a href="https://github.com/Ayam-Kampung/Jalurku_FrontEnd" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <img src="" alt="Wedding Invitation">
-  <h3>Wedding Invitation Website</h3>
-  <p>An elegant digital wedding invitation featuring event schedules, location details, and an online RSVP system.</p>
-  <div class="skills">
-    <a href="#">Laravel</a>
-    <a href="#">CSS</a>
-    <a href="#">JavaScript</a>
-  </div>
-  <div class="btns">
-    <a href="https://github.com/ALFADHANI284/Wedding-Website" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="https://wedding-fhaty-chelsya.smktelkom-pwt.sch.id/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <img src="assets/images/aksara_jawa.png" alt="Aksara Jawa">
-  <h3>Aksara Jawa Website</h3>
-  <p>An interactive educational website dedicated to learning, reading, and preserving the traditional Aksara Jawa script.</p>
-  <div class="skills">
-    <a href="#">HTML</a>
-    <a href="#">CSS</a>
-    <a href="#">JavaScript</a>
-  </div>
-  <div class="btns">
-    <a href="https://github.com/ALFADHANI284/aksarajawa" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="https://alfadhani284.github.io/aksarajawa/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-  </div>
-</div>
-    </section>
-
-    <!-- Section Certificates -->
-    <section class="certificates" id="certificates">
-      <p>CERTIFICATES</p>
-      <h1>My Certificates</h1>
-      <hr />
-      <div class="sertificate-container">
-        <div class="sertificate-card" data-certificate="ai-azure">
-          <img
-            src="assets/images/certificate/Sertifikat-AI.png"
-            alt="Web Development"
-          />
-          <h3>AI Azure</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi
-            soluta est veniam sequi nemo.
-          </p>
-        </div>
-
-        <div class="sertificate-card">
-          <img
-            src="assets/images/certificate/Sertifikat-Dilesin.png"
-            alt="App Development"
-          />
-          <h3>Dilessin Accademy</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi
-            soluta est veniam sequi nemo.
-          </p>
-        </div>
-
-        <div class="sertificate-card">
-          <img
-            src="assets/images/certificate/Sertifikat-Invention.png"
-            alt="Digital Marketing"
-          />
-          <h3>Invention Udayana</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi
-            soluta est veniam sequi nemo.
-          </p>
-        </div>
-
-        <div class="sertificate-card">
-          <img
-            src="assets/images/certificate/Sertifikat-JHIC.png"
-            alt="Email Marketing"
-          />
-          <h3>JHIC</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi
-            soluta est veniam sequi nemo.
-          </p>
-        </div>
-
-        <div class="sertificate-card">
-          <img
-            src="assets/images/certificate/Sertifkat-digiup.png"
-            alt="Email Marketing"
-          />
-          <h3>Telkom Digi Up</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi
-            soluta est veniam sequi nemo.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal Structure -->
-      <div id="certificate-modal" class="modal">
-        <div class="modal-content">
-          <span class="close-modal">&times;</span>
-          <img id="modal-image" src="" alt="Certificate" />
-          <div class="modal-info">
-            <h3 id="modal-title"></h3>
-            <p id="modal-desc"></p>
-            <p class="modal-date">
-              <strong>Issued:</strong> <span id="modal-date"></span>
-            </p>
-            <p class="modal-credential">
-              <strong>Credential ID:</strong> <span id="modal-id"></span>
-            </p>
-            <a href="#" id="modal-link" class="btn-verify" target="_blank"
-              >🔗 Verify Certificate</a
-            >
+        
+        <div class="project-card">
+          <img src="assets/images/arts.png" alt="E-Commerce Website" />
+          <h3 data-key="project1_title">E-Commerce Website (ARTS)</h3>
+          <p data-key="project1_desc">A modern online store featuring product filtering, a shopping cart, and a seamless payment system.</p>
+          <div class="skills">
+            <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/ALFADHANI284/ARTS" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://alfadhani284.github.io/ARTS/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
           </div>
         </div>
+
+        <div class="project-card">
+          <img src="images/Capture d'écran 2025-10-22 182207.png" alt="Portfolio Website" />
+          <h3 data-key="project2_title">Portfolio Website</h3>
+          <p data-key="project2_desc">A personal portfolio built to showcase my web development, design, and coding projects.</p>
+          <div class="skills">
+            <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">Bootstrap</a>
+          </div>
+          <div class="btns">
+            <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/eatscape.png" alt="Eatscape" />
+          <h3 data-key="project3_title">Eatscape</h3>
+          <p data-key="project3_desc">A responsive web application that provides detailed nutritional information for various foods and drinks.</p>
+          <div class="skills">
+            <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">API</a>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/RGB-Tim/eatscape" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://rgb-tim.github.io/eatscape/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/page_station.png" alt="Library Website"/>
+          <h3 data-key="project4_title">Library Website (Page Station)</h3>
+          <p data-key="project4_desc">A digital library platform designed for users to comfortably read and access ebooks.</p>
+          <div class="skills">
+            <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a> <a href="#">PHP</a>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/ALFADHANI284/Page-Station" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/raketin.png" alt="Raketin" />
+          <h3 data-key="project5_title">Booking Website (Raketin)</h3>
+          <p data-key="project5_desc">A dedicated landing page and booking system designed for easily reserving badminton courts.</p>
+          <div class="skills">
+            <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/ALFADHANI284/xipplg6_kelompok5_raketin" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://alfadhani284.github.io/xipplg6_kelompok5_raketin/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/fundi_vest.png" alt="FundiVest" />
+          <h3 data-key="project6_title">Education Finance Website (FundiVest)</h3>
+          <p data-key="project6_desc">An interactive, pixel-art themed educational platform focused on financial literacy and investment simulation.</p>
+          <div class="skills">
+            <a href="#">Vue JS</a> <a href="#">Tailwind CSS</a> <a href="#">Go Fiber</a>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/ALFADHANI284/FrontEnd" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.fundivest.xyz/" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="" alt="Jalurku">
+          <h3 data-key="project7_title">Choice of Major (Jalurku)</h3>
+          <p data-key="project7_desc">A guidance web app built to assist students in discovering, exploring, and selecting their ideal university majors.</p>
+          <div class="skills">
+            <a href="#">Vue JS</a> <a href="#">Tailwind CSS</a> <a href="#">Go Fiber</a>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/Ayam-Kampung/Jalurku_FrontEnd" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="" alt="Wedding Invitation">
+          <h3 data-key="project8_title">Wedding Invitation Website</h3>
+          <p data-key="project8_desc">An elegant digital wedding invitation featuring event schedules, location details, and an online RSVP system.</p>
+          <div class="skills">
+            <a href="#">Laravel</a> <a href="#">CSS</a> <a href="#">JavaScript</a>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/ALFADHANI284/Wedding-Website" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://wedding-fhaty-chelsya.smktelkom-pwt.sch.id/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/aksara_jawa.png" alt="Aksara Jawa">
+          <h3 data-key="project9_title">Aksara Jawa Website</h3>
+          <p data-key="project9_desc">An interactive educational website dedicated to learning, reading, and preserving the traditional Aksara Jawa script.</p>
+          <div class="skills">
+            <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/ALFADHANI284/aksarajawa" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://alfadhani284.github.io/aksarajawa/" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
       </div>
+    </section>
+
+    <section class="certificates" id="certificates">
+      <p data-key="certificates_title">CERTIFICATES</p>
+      <h1 data-key="certificates_title2">My Certificates</h1>
+      <hr />
+      <div class="sertificate-container">
+        
+        <div class="sertificate-card" data-certificate="ai-azure">
+          <img src="assets/images/certificate/Sertifikat-AI.png" alt="Web Development" />
+          <h3>AI Azure</h3>
+          <p data-key="certificates1_desc">Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo</p>
+        </div>
+
+        <div class="sertificate-card">
+          <img src="assets/images/certificate/Sertifikat-Dilesin.png" alt="App Development" />
+          <h3>Dilessin Accademy</h3>
+          <p data-key="certificates2_desc">Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo</p>
+        </div>
+
+        <div class="sertificate-card">
+          <img src="assets/images/certificate/Sertifikat-Invention.png" alt="Digital Marketing" />
+          <h3>Invention Udayana</h3>
+          <p data-key="certificates3_desc">Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo</p>
+        </div>
+
+        <div class="sertificate-card">
+          <img src="assets/images/certificate/Sertifikat-JHIC.png" alt="Email Marketing" />
+          <h3>JHIC</h3>
+          <p data-key="certificates4_desc">Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo</p>
+        </div>
+
+        <div class="sertificate-card">
+          <img src="assets/images/certificate/Sertifkat-digiup.png" alt="Email Marketing" />
+          <h3>Telkom Digi Up</h3>
+          <p data-key="certificates5_desc">Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo</p>
+        </div>
+
+      </div>
+    </section>
 
     <section class="contact" id="contact">
-      <p>CONTACT</p>
-      <h1>Get in Touch with Me</h1>
+      <p data-key="contact_title">CONTACT</p>
+      <h1 data-key="contac_title2">Get in Touch with Me</h1>
       <div class="contact-content">
         <div class="contact-info slide-in-left">
-          <p>
-            I'm always open to discuss exciting projects and new opportunities.
-            Let's collaborate!
+          <p data-key="contac_desc">
+            I'm always open to discuss exciting projects and new opportunities. Let's collaborate!
           </p>
           <div class="contact-details">
             <div class="contact-item">
@@ -440,97 +328,40 @@
               <span>Indonesia, Jawa Tengah</span>
             </div>
           </div>
-
-          <div class="social-links">
-            <a
-              href="https://github.com/ALFADHANI284/"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/alfadhani/"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a
-              href="https://wa.me/6285161228041"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
           </div>
-        </div>
 
         <div class="contact-form slide-in-right">
           <form id="contact-form">
             <div class="form-group">
-              <input
-                type="text"
-                placeholder="Your Name"
-                required
-                name="user_name"
-              />
+              <input type="text" placeholder="Your Name" required name="user_name" />
             </div>
             <div class="form-group">
-              <input
-                type="email"
-                placeholder="Your Email"
-                required
-                name="user_email"
-              />
+              <input type="email" placeholder="Your Email" required name="user_email" />
             </div>
             <div class="form-group">
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                rows="5"
-                required
-              ></textarea>
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             </div>
             <button type="submit" class="btn-send">Send Message</button>
           </form>
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="footer-container">
         <h2 class="footer-logo">Alfa</h2>
         <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#services">certificates</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" data-key="footer_home">Home</a></li>
+          <li><a href="#about" data-key="footer_about">About</a></li>
+          <li><a href="#project" data-key="footer_projects">Projects</a></li>
+          <li><a href="#services" data-key="footer_certificates">Certificates</a></li>
+          <li><a href="#contact" data-key="footer_contact">Contact</a></li>
         </ul>
-        <div class="footer-social">
-          <a
-            href="https://github.com/ALFADHANI284/"
-            target="_blank"
-            aria-label="GitHub"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/alfadhani/"
-            target="_blank"
-            aria-label="LinkedIn"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a
-            href="https://wa.me/6285161228041"
-            target="_blank"
-            aria-label="WhatsApp"
-            ><i class="fa-brands fa-whatsapp"></i
-          ></a>
-        </div>
-        <!-- <p class="footer-copy">&copy; 2025 Amine. All Rights Reserved.</p> -->
       </div>
     </footer>
+    
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="translate.js"></script>
   <script src="script.js"></script>
 </html>

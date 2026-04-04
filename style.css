@@ -1038,4 +1038,35 @@ body {
     }
 }
 
+/* Style Toogle Bahasa */
+.nav-item-lang {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;  
+}
 
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid var(--primary-blue);
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.lang-btn {
+  background-color: transparent;
+  color: var(--primary-blue);
+  border: none;
+  padding: 6px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+
+.lang-btn.active {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+}
