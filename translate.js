@@ -51,11 +51,13 @@ const terjemahan = {
         // Certificates
         certificates_title: "CERTIFICATES",
         certificates_title2: "My Certificates",
-        certificates1_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
-        certificates2_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
-        certificates3_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
-        certificates4_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
-        certificates5_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
+        certificates1_desc: "Competency certification in fundamental artificial intelligence concepts using Microsoft Azure technology.",
+        certificates2_desc: "Completion of intensive training programs for developing technical skills in modern technology fields.",
+        certificates3_desc: "Participation in a national-scale technology innovation competition held by Udayana University.",
+        certificates4_desc: "Awarded as a semi-finalist in the Jagoan Hosting Infra Competition for web infrastructure.",
+        ertificates5_desc: "Digital training certification to enhance career readiness in the creative and technology industries.",
+        certificates6_desc: "National-level competition focused on software development and digital solution design.",
+        certificates7_desc: "Appreciation for participation and achievement in the FitpactCup competition event.",
         // Contact
         contact_title: "CONTAC",
         contac_title2: "Get in Touch with Me",
@@ -122,11 +124,13 @@ const terjemahan = {
         // Certificates
         certificates_title: "SERTIFIKAT",
         certificates_title2: "Sertifikat Saya",
-        certificates1_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
-        certificates2_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
-        certificates3_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
-        certificates4_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
-        certificates5_desc: "Lorem Ipsum dolor sit amet consectetur adipiscing elit. Ut elegendi soluta est veniam sequi nemo",
+        certificates1_desc: "Sertifikasi kompetensi dalam pemahaman dasar kecerdasan buatan.",
+        certificates2_desc: "Penyelesaian program pelatihan intensif untuk pengembangan skill teknis di bidang teknologi modern.",
+        certificates3_desc: "Partisipasi dalam kompetisi inovasi teknologi berskala nasional yang diselenggarakan oleh Universitas Udayana.",
+        certificates4_desc: "Penghargaan sebagai semifinalis dalam ajang Jagoan Hosting Infra Competition di bidang infrastruktur web.",
+        certificates5_desc: "Sertifikasi pelatihan digital untuk meningkatkan kesiapan kerja di industri kreatif dan teknologi.",
+        certificates6_desc: "Kompetisi tingkat nasional yang berfokus pada pengembangan perangkat lunak dan desain solusi digital.",
+        certificates7_desc: "Apresiasi atas partisipasi dan prestasi dalam ajang kompetisi FitpactCup.",
         
         // Contact
         contact_title: "KONTAK",
