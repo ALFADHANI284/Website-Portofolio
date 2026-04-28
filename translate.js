@@ -120,7 +120,7 @@ const terjemahan = {
         
         // Certificates
         certificates_title: "SERTIFIKAT",
-        certificates_title2: "Sertifikat Saya",
+        certificates_title2: "Sertifikat GWE",
        certificates1_desc: "Menyelesaikan kursus dasar kecerdasan buatan yang diselenggarakan oleh Microsoft untuk memahami konsep dasar AI.",
         certificates2_desc: "Berhasil menyelesaikan program pelatihan teknis yang berfokus pada sistem kontrol versi Git dan alur kerjanya.",
         certificates3_desc: "Partisipasi dalam kompetisi inovasi teknologi berskala nasional yang diselenggarakan oleh Universitas Udayana.",
