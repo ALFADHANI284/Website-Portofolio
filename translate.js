@@ -23,7 +23,7 @@ const terjemahan = {
         about_desc1: "I'm a creative front-end developer passionate about building modern and responsive web experiences. My journey began with a love for design and evolved into a deep curiosity for how the web works — combining logic with creativity to bring ideas to life.",
         about_desc2: "When I'm not coding, I enjoy learning new technologies, improving my projects, and exploring better ways to make the web faster and more engaging. I believe in continuous learning, attention to detail, and the power of clean, meaningful design",
         about_title3: "What Drives Me",
-        about_languages: "Languages",
+        about_languages: "Programing Languages",
         about_education: "Vocational High School Telkom Purwokerto in the field of Software Engineering",
         about_projects: "Built more than 5 projects",
         // Projects
