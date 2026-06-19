@@ -24,6 +24,7 @@ const terjemahan = {
         about_desc2: "When I'm not coding, I enjoy learning new technologies, improving my projects, and exploring better ways to make the web faster and more engaging. I believe in continuous learning, attention to detail, and the power of clean, meaningful design",
         about_title3: "What Drives Me",
         about_languages: "Programing Languages",
+        about_education_title: "Education",
         about_education: "Vocational High School Telkom Purwokerto in the field of Software Engineering",
         about_projects: "Built more than 5 projects",
         // Projects
@@ -92,6 +93,7 @@ const terjemahan = {
         about_desc2: "Saat tidak sedang ngoding, saya senang mempelajari teknologi baru, mengembangkan proyek-proyek saya, dan mengeksplorasi cara yang lebih baik untuk membuat web menjadi lebih cepat dan menarik. Saya percaya pada pembelajaran berkelanjutan, ketelitian, dan kekuatan desain yang rapi serta bermakna.",
         about_title3: "Yang Memotivasi Saya",
         about_languages: "Bahasa Pemrograman",
+        about_education_title: "Sekolah",
         about_education: "SMK Telkom Purwokerto jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)",
         about_projects: "Telah membangun lebih dari 5 proyek",
         
