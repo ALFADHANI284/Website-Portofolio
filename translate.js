@@ -77,7 +77,7 @@ const terjemahan = {
         
         // Header
         status_avail: "Tersedia",
-        home_title: "Halo, Saya Alfa",
+        home_title: "Halo, Namaku adalah Alfa",
         home_subtitle: "Calon Fullstack Developer",
         home_desc1: "Saya suka mengubah ide kreatif menjadi website yang fungsional dan interaktif.",
         home_desc2: "Mengubah masalah kompleks menjadi solusi web yang elegan, efisien, dan terukur.",
